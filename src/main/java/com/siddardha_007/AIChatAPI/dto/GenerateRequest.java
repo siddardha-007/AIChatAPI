@@ -1,22 +1,21 @@
 package com.siddardha_007.AIChatAPI.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class GenerateRequest {
 
-    private String prompt;
+//    private String topic;
+//    private String tone;
+//    private String language;
+    private String request;
+
 
     public GenerateRequest(){
 
     }
 
-    public GenerateRequest(String prompt){
-        this.prompt = prompt;
-    }
 
-    public String getPrompt(){
-        return prompt;
-    }
-
-    public void setPrompt(String prompt){
-        this.prompt = prompt;
-    }
 }

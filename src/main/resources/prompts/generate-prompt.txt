@@ -1,0 +1,9 @@
+Answer the user's question.
+
+Return:
+- topic: the main technical concept
+- explanation: a clear developer-level explanation
+- example: a practical example
+
+User question:
+{request}

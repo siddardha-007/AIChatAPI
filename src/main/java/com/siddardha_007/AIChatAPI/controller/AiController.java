@@ -2,6 +2,7 @@ package com.siddardha_007.AIChatAPI.controller;
 
 import com.siddardha_007.AIChatAPI.dto.GenerateRequest;
 import com.siddardha_007.AIChatAPI.dto.GenerateResponse;
+import com.siddardha_007.AIChatAPI.dto.TechnicalAnswer;
 import com.siddardha_007.AIChatAPI.service.AiService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,9 +19,9 @@ public class AiController {
     }
 
     @PostMapping("/generate")
-    public GenerateResponse generate(@RequestBody GenerateRequest request){
-        String result = aiService.generate(request.getPrompt());
+    public TechnicalAnswer generate(@RequestBody GenerateRequest request){
+//        String result = aiService.generate(request);
 
-        return new GenerateResponse(result);
+        return aiService.generate(request.getRequest());
     }
 }
