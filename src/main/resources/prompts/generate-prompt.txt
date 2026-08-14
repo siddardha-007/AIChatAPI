@@ -1,9 +1,8 @@
-Answer the user's question.
+Answer the user's technical question.
 
-Return:
-- topic: the main technical concept
-- explanation: a clear developer-level explanation
-- example: a practical example
+Provide:
+- a concise explanation
+- a short practical example
 
 User question:
 {request}

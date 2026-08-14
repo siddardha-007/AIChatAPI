@@ -40,9 +40,12 @@ public class AiService {
 
         return chatClient
                 .prompt()
-                .system(systemPrompt)
+                .system(generatePrompt)
                 .user(prompt)
                 .call()
-                .entity(TechnicalAnswer.class);
+                .entity(
+                        TechnicalAnswer.class,
+                        spec -> spec.useProviderStructuredOutput()
+                );
     }
 }
