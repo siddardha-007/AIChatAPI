@@ -1,5 +1,6 @@
 package com.siddardha_007.AIChatAPI.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.siddardha_007.AIChatAPI.dto.GenerateRequest;
 import com.siddardha_007.AIChatAPI.dto.GenerateResponse;
 import com.siddardha_007.AIChatAPI.dto.TechnicalAnswer;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/ai")
 public class AiController {
